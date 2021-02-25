@@ -1,0 +1,40 @@
+export const convertUserArray = (users) => {
+    return users && users.map((user) => {
+        return {
+            login_uuid: user.login ? user.login.uuid : "",
+            login_username: user.login ? user.login.username : "",
+            login_password: user.login ? user.login.password : "",
+            login_salt: user.login ? user.login.salt : "",
+            login_md5: user.login ? user.login.md5 : "",
+            login_sha1: user.login ? user.login.sha1 : "",
+            login_sha256: user.login ? user.login.sha256 : "",
+            name_title: user.name ? user.name.title : '',
+            name_first: user.name ? user.name.first : '',
+            name_last: user.name ? user.name.last : '',
+            gender: user.gender,
+            location_street_number: user.location && user.location.street ? user.location.street.number :  undefined,
+            location_street_name: user.location && user.location.street ? user.location.street.name : '',
+            location_city: user.location  ? user.location.city : '',
+            location_state: user.location  ? user.location.state : '',
+            location_country: user.location  ? user.location.country : '',
+            location_postcode: user.location && user.location.postcode  ? user.location.postcode.toString() : '',
+            location_coordinates_latitude: user.location && user.location.coordinates  ? user.location.coordinates.latitude : '',
+            location_coordinates_longitude: user.location && user.location.coordinates  ? user.location.coordinates.longitude : '',
+            location_timezone_offset: user.location && user.location.timezone  ? user.location.timezone.offset : '',
+            location_timezone_description: user.location && user.location.description  ? user.location.coordinates.timezone.description : '',
+            email: user.email,
+            dob_date: user.dob ? user.dob.date : '',
+            dob_age: user.dob ? user.dob.age : undefined,
+            registered_date: user.registered ? user.registered.date : '',
+            registered_age: user.registered ? user.registered.age : undefined,
+            phone: user.phone,
+            cell: user.cell,
+            id_name: user.id ? user.id.name : '',
+            id_value: user.id ? user.id.value : '',
+            picture_large: user.picture ? user.picture.large : '',
+            picture_medium: user.picture ? user.picture.medium: '',
+            picture_thumbnail: user.picture ? user.picture.thumbnail : '',
+          }
+    })
+    
+} 

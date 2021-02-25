@@ -1,0 +1,47 @@
+.app {
+  display: flex;
+  justify-content: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 60;
+  color: white !important;
+}
+
+.user-control {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px 20px 10px;
+}
+
+.site-layout {
+  min-height: 80vh !important;
+  padding: 24px;
+  background: #bdd0d3;
+}
+.user-layout {
+  display: flex !important;
+  justify-content: center;
+}
+.pagination-layout {
+  display: flex !important;
+  justify-content: center;
+}
+
+.ant-modal-header {
+  background: #16548e !important;
+}
+
+.ant-modal-title {
+  color: white !important;
+}
+.ant-modal-close-x {
+  color: white !important;
+}
+
+.ant-descriptions-bordered .ant-descriptions-item-label {
+  background: #bdd0d3 !important;
+}
